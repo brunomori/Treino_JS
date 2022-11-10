@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Document</title>
+
+</head>
+<body>
+    <header>
+        <h1>Bem vindo a festa senhor(a)</h1>
+    </header>
+
+    <article>
+        <div class="pai" >
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" minlength="3" max="8" required placeholder="digite seu nome  ">
+            <label for="idono" class="top">Quem te convidouu para festa?</label>
+            <input type="text" name="dono" id="idono">
+            <button id="validar" onclick="validar()">Validar</button>
+        </div>
+        <section>
+            <div id="res" class="centro">Aqui vai a respota</div>
+        </section>
+    </article>
+    
+    <script src="Custom.js"></script>   
+</body>
+
+</html>

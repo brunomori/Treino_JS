@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+article{
+    border:  1px solid black;
+    padding: 10%;
+    
+}
+
+h1{
+    text-align: center;
+
+}
+.pai{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.centro{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.top{
+    margin-top: 10px;
+}
+
+
+
