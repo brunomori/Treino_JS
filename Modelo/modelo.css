@@ -4,6 +4,10 @@ body{
 
 }
 
+
+
+
+
 header{
     color: white;
     text-align: center;
@@ -13,11 +17,38 @@ header{
 section {
     background-color: white;
     border-radius: 10px;
-    padding: 15px;
-    width: 500px;
+    padding: 100px;
+    width: 250px;
     margin: auto;
     box-shadow: 3px 3px 10px rgb(0,0,0,0.363);
+  
 }
+
+
+.boxpai{
+    display: flex;
+    
+}
+
+
+span{
+    height: 100px;
+    width: 80%;
+    border: black solid 1px
+}
+
+.azul{
+    margin-top: 10px;
+    background-color: rgba(75, 75, 243, 0.918);
+    
+}
+
+.red{
+   
+    background-color: rgba(180, 47, 47, 0.664);
+}
+
+
 
 footer{
     color: white;
