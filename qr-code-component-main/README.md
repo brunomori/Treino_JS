@@ -1,4 +1,5 @@
-# Frontend Mentor - componente de código QR
+# Frontend Mentor - componente de código QR - 
+
 
 ![Visualização do design para o desafio de codificação do componente de código QR](./design/desktop-preview.jpg)
 
