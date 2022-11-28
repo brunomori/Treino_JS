@@ -3,6 +3,8 @@ const turnOff=document.getElementById('turnOff');
 const lamp=document.getElementById('lamp');
 
 
+
+
 function LampOn(){
     document.getElementById("lamp").src="img/ligada.jpg"
   
@@ -19,6 +21,16 @@ function LampQuebra(){
 }
 
 function nova(){
+    document.getElementById("lamp").src="img/desligada.jpg"
+    
+}
+
+function ligar(){
+    document.getElementById("lamp").src="img/ligada.jpg"
+    
+}
+
+function desligar(){
     document.getElementById("lamp").src="img/desligada.jpg"
     
 }
