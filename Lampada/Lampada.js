@@ -17,3 +17,8 @@ function LampQuebra(){
     document.getElementById("lamp").src="img/quebrada.jpg"
 
 }
+
+function nova(){
+    document.getElementById("lamp").src="img/desligada.jpg"
+    
+}
