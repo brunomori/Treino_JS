@@ -4,10 +4,8 @@ const lamp=document.getElementById('lamp');
 
 
 
-
 function LampOn(){
-    document.getElementById("lamp").src="img/ligada.jpg"
-  
+    document.getElementById("lamp").src="img/ligada.jpg"   
 }
 
 function LampOff(){

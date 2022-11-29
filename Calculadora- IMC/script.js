@@ -1,35 +1,37 @@
-
 function calcular() {
-    const altura = document.getElementById('ialtura').value
-    const peso = document.getElementById('ipeso').value
-    const nome = document.getElementById('inome').value
-    const resultado = document.getElementById('ires')
+    var nome = document.getElementById('inome').value
+    var altura = document.getElementById('ialtura').value
+    var peso = document.getElementById('ipeso').value
+    let resposta = document.getElementById('ires')
 
-    if (nome !== '' && peso !== '' && altura !== '') {  //se valor de nome foi diferente de '' campo vazio
-        const valorIMC = (peso / (altura * altura)).toFixed(2) //toFixed(2) Redonda duas casas
-        resultado.textContent = valorIMC
+    if (nome !== '' && altura !== '' && peso !== '') {
+        var valorIMC = (peso / (altura * altura)).toFixed(2)
+        let classificao = ''
 
-        let classificacao = ""
         if (valorIMC < 18.5) {
-            classificacao = 'abaixo do peso'
-        } else if (valorIMC < 25) {
-            classificacao = 'peso ideal. Parabens'
-        } else if (valorIMC < 30) {
-            classificacao = 'levemente acima do peso'
-        } else if (valorIMC < 35) {
-            classificacao = 'com obesidade grau 1'
-        } else if (valorIMC < 40) {
-            classificacao = 'com obesidade grau 2'
-        } else {
-            classificacao = 'com obesidade grau 3. Cuidado!!!'
-        }
-        resultado.textContent = `${nome} seu IMC é ${valorIMC} e você está ${classificacao}`
+            classificao = 'abaixo do peso'
+            resposta.textContent = `${nome} seu IMC é ${valorIMC} e você está ${classificao} `
 
+        } else if (valorIMC < 25) {
+            classificao = 'Peso ideal, Parabéns'
+            resposta.textContent = `${nome} seu IMC é ${valorIMC} e você está ${classificao} `
+
+        } else if (valorIMC < 30) {
+            classificao = 'levemente acima do peso'
+            resposta.textContent = `${nome} seu IMC é ${valorIMC} e você está ${classificao} `
+        } else if (valorIMC < 35) {
+            classificao = 'obesidade grau 1'
+            resposta.textContent = `${nome} seu IMC é ${valorIMC} e você está na ${classificao} `
+        } else if (valorIMC < 40) {
+            classificao = 'obesidade grau2'
+            resposta.textContent = `${nome} seu IMC é ${valorIMC} e você está na ${classificao} `
+        } else {
+            classificao = 'obesidade grau 3, Procure um médico!'
+            resposta.textContent = `${nome} seu IMC é ${valorIMC} e você está na ${classificao} `
+        }
     }
+
     else {
-        window.alert('ERRO!')
-        resultado.textContent = 'Preencha todosos campos!'
+        resposta.textContent = 'Preencha os dados corretamente'
     }
 }
-
-
