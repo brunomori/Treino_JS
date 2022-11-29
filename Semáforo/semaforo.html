@@ -20,15 +20,19 @@
 
 
     <section>
-        <div class="carFilho">
-            <img src="img/desligado.png" alt="">
+        <div>
+            <img id="img" src="img/desligado.png" alt="">
         </div>
-        <input type="button" value="Vermelho">
-        <input type="button" value="Amarelo">
-        <input type="button" value="Verde">
-        <input type="button" value="Automático">
+
+        <div>
+            <button id="red" class="btn btn-danger" onclick="vermelho()">Vermelho</button>
+            <button id="yellow" class="btn btn-warning" onclick="amarelo()">Amarelo</button>
+            <button id="green" class="btn btn-success" onclick="verde()">Verde</button>
+            <button id="automatic" class="btn btn-primary" onclick="automatico()">Automático</button>
+        </div>
+
     </section>
-    
+
     <footer>
         <br>
         <a href="https://www.linkedin.com/in/bruno-manzini-mori-a9b138b5/" target="_blank"
