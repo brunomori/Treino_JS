@@ -8,7 +8,7 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="modelo.css">
-    <script src="script.js"></script>
+
 
     <title>Semaforo</title>
 </head>
@@ -21,14 +21,15 @@
 
     <section>
         <div>
-            <img id="img" src="img/desligado.png" alt="">
+            <img id="img" src="img/desligado.png">
         </div>
 
-        <div>
-            <button id="red" class="btn btn-danger" onclick="vermelho()">Vermelho</button>
-            <button id="yellow" class="btn btn-warning" onclick="amarelo()">Amarelo</button>
-            <button id="green" class="btn btn-success" onclick="verde()">Verde</button>
-            <button id="automatic" class="btn btn-primary" onclick="automatico()">Automático</button>
+        <div id="buttons">
+            <button onclick="red()" id="red" class="btn btn-danger">Vermelho</button>
+            <button onclick="yellow()" id="yellow" class="btn btn-warning">Amarelo</button>
+            <button onclick="green()" id="green" class="btn btn-success">Verde</button>
+            <button onclick="automatic()" id="automatic" class="btn btn-primary">Automático</button>
+            <button onclick="stop()" id="stop" class="btn btn-primary">Parar</button>
         </div>
 
     </section>
@@ -38,6 +39,7 @@
         <a href="https://www.linkedin.com/in/bruno-manzini-mori-a9b138b5/" target="_blank"
             class="badge badge-dark">Bruno Manzini</a>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 
