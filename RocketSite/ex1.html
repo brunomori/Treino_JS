@@ -14,21 +14,22 @@
 </body>
 <script>
     // 1.Declare uma variavel de nome weight
-    let weight
 
+//    let weight
+  
     // 2. Que tipo de dado é a variavel acima? 
-    console.log(typeof weight)
+//    console.log(typeof weight)
 
     /* 3. Declare uma variavel e atribua valores para cada um dos dados:
         * name :String
         * age: Number
-        * stars:Number(Float)
+        * weight:Number(Float)
         * isSubscribed:Boolean
     */
-    let name = "Bruno"
-    let age = 24
-    let stars = 1.1
-    let isSubscribed = true
+    let name ="Bruno"
+    let age=26
+    let weight=75.5
+    let inscrito=true
 
 
     /*
@@ -41,64 +42,51 @@
       
     */
 
-    let student = {
-            name : "Bruno",
-            age :24,
-            weight : 70.5,
-            isSubscribed : true
-        }
- 
+    student= {
+        name,age,weight,inscrito
+    }
 
-    console.log(typeof student)
-
-
-    console.log(`${student.name} de idade ${student.age} pesa ${student.weight}Kg`)
-
-
-
-
+    console.log(student)
+     console.log(`Ola ${student.name}, você tem o peso de ${student.weight}Kg e sua idade é de ${student.age} anos`)
 
     /*
        5. Declare uma variavel do tipo Array, de nome students e atribua a ele nenhum valor,ou seja,somente o Array vazio.
     */
-        // let student = []
+        students=[]
+       
 
     /*
        6 Reatribua valor para variável acima, colocando dentro dela objeto student da questão 4. 
        (Não copiar e colar o bojeto , mas usar o objeto criado e iniseir ele no Array) 
     */
-     let students=[
-        student
-     ]
-     console.log(students)
+        students=[
+            student
+        ]
+
+        console.log(students)
 
     /*
        7 Coloque no console o valor da posição zero do Array acima
     */
-
-    console.log(students[0])
+        console.log(students[0])
 
     /*
        8 Crie um novo student e coloque na posição 1 do Array students
-    */
-    let john ={
-        name:"Breno",
-        age:23,
-        weight:74.4,
-        isSubscribed:true,
-    }
+    */  
+        let john ={
+            name:"john",
+            age:25,
+            weight:75.2,
+            inscrito:true
 
-    students=[
+        }
+
+      student=[
         student,
         john
-    ]
+      ]
+            console.log(student[1])
 
-    students[2]=john
-    console.log(students[1])
-    console.log(students[2])
-    /*
-      9 Sem rodar o codigo responda qual é a resposata do codigo abaixo e por que? Apos sua resposta rode o codigo e veja se acertou 
-    */
 
 </script>
 
