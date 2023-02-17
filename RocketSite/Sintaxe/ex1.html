@@ -14,11 +14,10 @@
 </body>
 <script>
     // 1.Declare uma variavel de nome weight
-
-//    let weight
-  
+    // let weight
+   
     // 2. Que tipo de dado é a variavel acima? 
-//    console.log(typeof weight)
+    // console.log(weight)
 
     /* 3. Declare uma variavel e atribua valores para cada um dos dados:
         * name :String
@@ -26,66 +25,68 @@
         * weight:Number(Float)
         * isSubscribed:Boolean
     */
-    let name ="Bruno"
-    let age=26
-    let weight=75.5
-    let inscrito=true
+   let name="Bruno"
+   let age=24
+   let weight=65.7
+   let inscrito=true
 
 
     /*
-       4   A variavel student abaixo é de que tipo de dado?
+       4   Crie um variavel estudante?
 
        4.1 Atribua a ela as mesma propriedades e valores do exercicio 3.
+       
 
        4.2 mostre no console a seguinte mensagem:
        <name> de idade <age> pesa <weight> pelos valores de cada propriedade do objeto.
       
     */
-
-    student= {
-        name,age,weight,inscrito
+   
+    let estudante={
+     name,age,weight,inscrito
     }
 
-    console.log(student)
-     console.log(`Ola ${student.name}, você tem o peso de ${student.weight}Kg e sua idade é de ${student.age} anos`)
+    console.log(`Olá ${estudante.name}, você tem ${estudante.age} e pesa ${weight} e seu status é: ${estudante.inscrito}`)
+ 
 
     /*
        5. Declare uma variavel do tipo Array, de nome students e atribua a ele nenhum valor,ou seja,somente o Array vazio.
     */
-        students=[]
+   estudantes=[]
+       
        
 
     /*
        6 Reatribua valor para variável acima, colocando dentro dela objeto student da questão 4. 
        (Não copiar e colar o bojeto , mas usar o objeto criado e iniseir ele no Array) 
     */
-        students=[
-            student
-        ]
 
-        console.log(students)
+   
 
     /*
        7 Coloque no console o valor da posição zero do Array acima
     */
-        console.log(students[0])
+
+       
 
     /*
        8 Crie um novo student e coloque na posição 1 do Array students
     */  
-        let john ={
-            name:"john",
-            age:25,
-            weight:75.2,
-            inscrito:true
+    let estudante01={
+        name:"Joao",
+        age:25,
+        weight:65.5,
+        inscrito:false
 
-        }
+    }
 
-      student=[
-        student,
-        john
-      ]
-            console.log(student[1])
+    estudante=[
+        estudante,
+        estudante01
+    ]
+
+    console.log(estudante[1])
+    console.log(estudante[0])
 
 
 </script>
